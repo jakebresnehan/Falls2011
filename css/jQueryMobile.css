@@ -1623,7 +1623,7 @@ textarea.ui-input-text { height: 50px; -webkit-transition: height 200ms linear; 
 */
 .ui-listview { margin: 0; counter-reset: listnumbering; }
 .ui-content .ui-listview { margin: -15px; }
-.ui-content .ui-listview-inset { margin: 1em 0;  }
+.ui-content .ui-listview-inset { margin: 1em;  }
 .ui-listview, .ui-li { list-style:none; padding:0; }
 .ui-li, .ui-li.ui-field-contain { display: block; margin:0; position: relative; overflow: visible; text-align: left; border-width: 0; border-top-width: 1px; }
 .ui-li .ui-btn-text a.ui-link-inherit { text-overflow: ellipsis; overflow: hidden; white-space: nowrap;  }
