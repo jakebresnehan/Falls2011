@@ -85,7 +85,7 @@ td { vertical-align: top; }
 
 #wrapper {
 	position:absolute; z-index:1;
-	top:40px; bottom:100px; left:0;
+	top:40px; bottom:60px; left:0;
 	width:100%;
 	overflow:auto;
 }
@@ -140,6 +140,12 @@ h1{
 */  
 }
 
+h4{
+  
+  font-family: 'helvetica neue';
+}
+
+
 /* ==|== Content =====================================================
 
    ========================================================================== */
@@ -148,46 +154,106 @@ div[data-role=content]{
 }
 
 #choose-festival{
- /* background: url('../img/choose.png') no-repeat 50% 80px;*/
+  background: #E4E4E4 url('../img/choose-bg.png') no-repeat 50% 30%;
 
 }
 
 #choose-festival h4{
-margin: 70px 0 40px 0;
+margin: 35px 0 50px 0;
 font-weight: bold;
 font-size: 18px;
+text-align: center;
 }
 
 #choose-festival a.button{
- color: #fff;
+    color: #646464;
  }
 
 
+ #choose-festival a.button:hover{
+     color: #333;
+  }
 .button{
   /*top: 280px;
     left: 30px;
     position: absolute;
     width: 100px;*/
-    background-color: #a0df04;
-    background-image: -webkit-gradient(linear, left top, left bottom, from(rgb(160, 223, 4)), to(rgb(95, 159, 0)));
-    background-image: -webkit-linear-gradient(top, rgb(160, 223, 4), rgb(95, 159, 0));
-    background-image: -moz-linear-gradient(top, rgb(160, 223, 4), rgb(95, 159, 0));
-    background-image: -o-linear-gradient(top, rgb(160, 223, 4), rgb(95, 159, 0));
-    background-image: -ms-linear-gradient(top, rgb(160, 223, 4), rgb(95, 159, 0));
-    background-image: linear-gradient(top, rgb(160, 223, 4), rgb(95, 159, 0));
+   
+   
+    background-color: #f4f5f7;
+    background-image: -webkit-gradient(linear, left top, left bottom, from(rgb(244, 245, 247)), to(rgb(206, 208, 211)));
+    background-image: -webkit-linear-gradient(top, rgb(244, 245, 247), rgb(206, 208, 211));
+    background-image: -moz-linear-gradient(top, rgb(244, 245, 247), rgb(206, 208, 211));
+    background-image: -o-linear-gradient(top, rgb(244, 245, 247), rgb(206, 208, 211));
+    background-image: -ms-linear-gradient(top, rgb(244, 245, 247), rgb(206, 208, 211));
+    background-image: linear-gradient(top, rgb(244, 245, 247), rgb(206, 208, 211));
+
+   
+   border: 2px solid #666;
+   
     padding: 10px;
     border-radius: 5px;
-    color: #fff;
+    color: #646464;
     text-shadow: none;
     text-decoration: none;
     text-align: center;
     display: block;
     width: 80%;
-    margin: 20px auto;
+    margin: 30px auto;
+}
+
+.button:hover{
+  background-color: #e4e5e8;
+  background-image: -webkit-gradient(linear, left top, left bottom, from(rgb(228, 229, 232)), to(rgb(206, 208, 211)));
+  background-image: -webkit-linear-gradient(top, rgb(228, 229, 232), rgb(206, 208, 211));
+  background-image: -moz-linear-gradient(top, rgb(228, 229, 232), rgb(206, 208, 211));
+  background-image: -o-linear-gradient(top, rgb(228, 229, 232), rgb(206, 208, 211));
+  background-image: -ms-linear-gradient(top, rgb(228, 229, 232), rgb(206, 208, 211));
+  background-image: linear-gradient(top, rgb(228, 229, 232), rgb(206, 208, 211));
+
+
+   border: 2px solid #333;
+
+
+}
+
+/* ==|== No Fav's Set =====================================================
+
+   ========================================================================== */
+
+
+
+#no-favs div[data-role=content] h2, #no-favs div[data-role=content] h3{
+  text-align: center;
+  margin-top: 50px;
+}
+
+#start-arrow{
+  position: absolute;
+  bottom: 100px;
+  right: 18%;
+}
+
+/* ==|== Select Day =====================================================
+
+   ========================================================================== */
+   
+#day-select div[data-role=content] h2{
+  text-align: center;
 }
 
 
+/* ==|== List Styles =====================================================
 
+   ========================================================================== */
+
+div[data-role=content] ul {
+  list-style: none;
+}
+
+div[data-role=content] ul li{
+  margin: 20px;
+}
 
 
 /* ==|== Footer =====================================================
@@ -238,8 +304,8 @@ li#home a{
 
 li#my-tt a{
   background: url('../img/my-tt.png') no-repeat 0 0;
-  height: 29px;
-  width: 30px;
+  height: 30px;
+  width: 27px;
   text-indent: -9999em;
   display: block;
 }
